@@ -25,4 +25,12 @@
         <item name="android:background">@color/black_overlay</item>
     </style>
 
+    <array name="slider">
+        <item>@style/LightSlider</item>
+    </array>
+
+    <style name="LightSlider" parent="Material.Widget.Slider">
+        <item name="sl_primaryColor">?attr/colorPrimary</item>
+    </style>
+
 </resources>
