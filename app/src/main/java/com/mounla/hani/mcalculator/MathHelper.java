@@ -15,7 +15,7 @@ public class MathHelper {
     double answer ;
 
 
-    public  double evaluate(String input) throws Throwable {
+    public  double evaluate(String input){
 
         char [] tokens = input.toCharArray();
         for (int i = 0; i < tokens.length; i++)
@@ -188,7 +188,7 @@ public class MathHelper {
             return true;
     }
 
-    private  double doOperation(char op, double b, double a) throws Throwable {
+    private  double doOperation(char op, double b, double a)  {
         switch(op)
         {
             case '+' : return a + b;
@@ -198,7 +198,7 @@ public class MathHelper {
             case '%' : return b /100;
             case '/' :
                 if(b == 0) {
-                    throw new Throwable("\"Cannot divide by Zero ! \\n check your input\"");
+//                    throw new Throwable("\"Cannot divide by Zero ! \\n check your input\"");
 //                    Toast t = Toast.makeText(getApplicationContext(),, 2000 );
 //                    t.show();
                 }
@@ -206,7 +206,7 @@ public class MathHelper {
                     return a / b;
             case '÷' :
                 if(b == 0) {
-                    throw new Throwable("\"Cannot divide by Zero ! \\n check your input\"");
+//                    throw new Throwable("\"Cannot divide by Zero ! \\n check your input\"");
 
 //                    Toast t = Toast.makeText(this,"Cannot divide by Zero ! \n check your input", 2000 );
 //                    t.show();

@@ -16,11 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".About" />
-        <activity
-            android:name=".PlottingFunctions"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_ploting_functions"
-            android:theme="@style/FullscreenTheme"></activity>
+        <activity android:name=".Plotting"></activity>
     </application>
 
 </manifest>

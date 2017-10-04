@@ -61,7 +61,7 @@ public class Main extends AppCompatActivity implements View.OnLongClickListener
     @Override
     public boolean onLongClick(View v)
     {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("ans");
         return true;
@@ -111,68 +111,68 @@ public class Main extends AppCompatActivity implements View.OnLongClickListener
 
     //region NUMBERPANEL
     public void n0(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("0");
     }
 
     public void n1(View view){
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("1");
     }
 
     public void n2(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("2");
     }
 
     public void n3(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("3");
     }
 
     public void n4(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("4");
     }
 
     public void n5(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("5");
     }
 
     public void n6(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("6");
     }
 
     public void n7(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("7");
     }
 
     public void n8(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("8");
 
     }
 
     public void n9(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("9");
     }
 
     public void dot(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition(".");
     }
@@ -180,25 +180,25 @@ public class Main extends AppCompatActivity implements View.OnLongClickListener
 
     //region OPERATIONS
     public void plus(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("+");
     }
 
     public void mines(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("-");
     }
 
     public void mul(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("×");
     }
 
     public void div(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("÷");
     }
@@ -217,36 +217,37 @@ public class Main extends AppCompatActivity implements View.OnLongClickListener
         pos += s.length();
         editText.setText(toPos + toEnd);
         editText.setSelection(pos);
+        inputExpression = editText.getText().toString();
     }
 
     //region SCIENTIFIC
     public void sin(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("sin(");
     }
 
     public void cos(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("cos(");
     }
 
     public void tan(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("tan(");
     }
 
     public void log(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("log(");
     }
 
 
     public void ln(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         char [] insert = inputExpression.toCharArray();
         String toEnd = "" ,toPos = "";
@@ -262,7 +263,7 @@ public class Main extends AppCompatActivity implements View.OnLongClickListener
     }
 
     public void sqrt(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         char [] insert = inputExpression.toCharArray();
         String toEnd = "" ,toPos = "";
@@ -278,7 +279,7 @@ public class Main extends AppCompatActivity implements View.OnLongClickListener
     }
 
     public void pow(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         char [] insert = inputExpression.toCharArray();
         String toEnd = "" ,toPos = "";
@@ -294,7 +295,7 @@ public class Main extends AppCompatActivity implements View.OnLongClickListener
     }
 
     public void fact(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         char [] insert = inputExpression.toCharArray();
         String toPos = "" , toEnd = "";
@@ -310,13 +311,13 @@ public class Main extends AppCompatActivity implements View.OnLongClickListener
     }
 
     public void e(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("e");
     }
 
     public void percent(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         correctPosition("%");
     }
@@ -343,7 +344,7 @@ public class Main extends AppCompatActivity implements View.OnLongClickListener
     }
 
     public void allClear(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         editText.setText("");
         TextView t = (TextView) findViewById(R.id.temp);
         t.setText("");
@@ -352,7 +353,7 @@ public class Main extends AppCompatActivity implements View.OnLongClickListener
     }
 
     public void brackets(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         char [] equation = inputExpression.toCharArray();
         int explenght = equation.length;
@@ -381,7 +382,7 @@ public class Main extends AppCompatActivity implements View.OnLongClickListener
     }
 
     public void backspace(View view) {
-        editText = (EditText) findViewById(R.id.editText);
+
         inputExpression = editText.getText().toString();
         char [] insert = inputExpression.toCharArray();
         if(pos != 0)
@@ -405,7 +406,7 @@ public class Main extends AppCompatActivity implements View.OnLongClickListener
         try
         {
             TextView temp = (TextView) findViewById(R.id.temp);
-            editText = (EditText) findViewById(R.id.editText);
+
             inputExpression = editText.getText().toString();
             MathHelper m = new MathHelper();
             double num = m.evaluate(inputExpression);
@@ -428,7 +429,13 @@ public class Main extends AppCompatActivity implements View.OnLongClickListener
     }
 
     public void plot(View view) {
-        startActivity(new Intent(getApplication(),PlottingFunctions.class));
+        inputExpression = editText.getText().toString();
+        startActivity(new Intent(getApplication(),Plotting.class).putExtra("equation" , inputExpression));
+    }
+
+    public void xClick(View view) {
+        inputExpression = editText.getText().toString();
+        correctPosition("X");
     }
 
     //endregion
