@@ -1,7 +1,4 @@
 <resources>
     <string name="app_name">M Calculator</string>
 
-    <string name="title_activity_ploting_functions">PlotingFunctions</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

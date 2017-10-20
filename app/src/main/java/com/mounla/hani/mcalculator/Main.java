@@ -1,5 +1,7 @@
 package com.mounla.hani.mcalculator;
 
+import android.appwidget.AppWidgetManager;
+import android.appwidget.AppWidgetProviderInfo;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -41,6 +43,8 @@ public class Main extends AppCompatActivity implements View.OnLongClickListener
         longBackspace.setOnLongClickListener(longBackspace(savedInstanceState));
         editText.setSelection(pos);
 
+//        widget();
+
         try {
             Button about = (Button)findViewById(R.id.aboutBTN);
             about.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +57,21 @@ public class Main extends AppCompatActivity implements View.OnLongClickListener
 
         }
     }
+
+//    private void widget() {
+//        AppWidgetManager appWidgetManager;
+//        int widgetId;
+//        Bundle myOptions = appWidgetManager.getAppWidgetOptions (widgetId);
+//
+//// Get the value of OPTION_APPWIDGET_HOST_CATEGORY
+//        int category = myOptions.getInt(AppWidgetManager.OPTION_APPWIDGET_HOST_CATEGORY, -1);
+//
+//// If the value is WIDGET_CATEGORY_KEYGUARD, it's a lockscreen widget
+//        boolean isKeyguard = category == AppWidgetProviderInfo.WIDGET_CATEGORY_KEYGUARD;
+//
+//        int baseLayout = isKeyguard ? R.layout.keyguard_widget_layout : R.layout.widget_layout;
+//    }
+
     public View.OnLongClickListener longBackspace(Bundle v)
     {
         editText.setText("");
